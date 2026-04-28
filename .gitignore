@@ -1,1 +1,11 @@
-data/
+data/glove/glove.6B.300d.txt
+
+data/MINDsmall_dev/behaviors.tsv
+data/MINDsmall_dev/entity_embedding.vec
+data/MINDsmall_dev/news.tsv
+data/MINDsmall_dev/relation_embedding.vec
+
+data/MINDsmall_train/behaviors.tsv
+data/MINDsmall_train/entity_embedding.vec
+data/MINDsmall_train/news.tsv
+data/MINDsmall_train/relation_embedding.vec

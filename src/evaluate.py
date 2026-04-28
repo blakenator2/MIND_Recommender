@@ -62,3 +62,6 @@ def evaluate(model, val_loader, device):
         'nDCG@5': np.mean(ndcg5s), 'nDCG@10': np.mean(ndcg10s)
     
     }
+
+def loss_graph():
+    print("graph")

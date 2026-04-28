@@ -54,4 +54,4 @@ def train(NAME, BATCH_SIZE = 64, LEARNING_RATE = 1e-4, EPOCHS = 5, NEG_SAMPLE_K 
         torch.save(model.state_dict(),
                 f'models/nrms_epoch{epoch+1}{NAME}.pt')
     
-    evaluate(model=model, val_loader=val_loader, device=device)
+        evaluate(model=model, val_loader=val_loader, device=device)
