@@ -3,6 +3,7 @@ from torch import nn
 import torch
 from src.model import NRMSModel
 from src.data_loader import data_load
+from src.evaluate import evaluate
 
 def train(NAME, BATCH_SIZE = 64, LEARNING_RATE = 1e-4, EPOCHS = 5, NEG_SAMPLE_K = 4, MAX_HISTORY = 50,
           MAX_TITLE_LEN = 30, NUM_HEADS = 16, HEAD_DIM = 16):
@@ -53,4 +54,4 @@ def train(NAME, BATCH_SIZE = 64, LEARNING_RATE = 1e-4, EPOCHS = 5, NEG_SAMPLE_K 
         torch.save(model.state_dict(),
                 f'models/nrms_epoch{epoch+1}{NAME}.pt')
     
-    return model, val_loader, device
+    evaluate(model=model, val_loader=val_loader, device=device)

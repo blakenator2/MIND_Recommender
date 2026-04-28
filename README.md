@@ -1,2 +1,26 @@
-# MIND_Recommender
-Final Machine Learning Capstone Project
+# MIND Recommender
+## **Introduction**
+
+---
+
+## **Dataset description**
+
+
+---
+
+## **Model explanation**
+
+---
+
+## **Training details**
+
+
+---
+
+## **Results**
+
+
+## **Discussion and conclusion**
+
+
+---
