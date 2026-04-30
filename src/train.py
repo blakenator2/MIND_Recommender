@@ -13,7 +13,7 @@ def train(NAME, BATCH_SIZE = 64, LEARNING_RATE = 1e-4, EPOCHS = 5, NEG_SAMPLE_K 
           MAX_TITLE_LEN)
 
     # Initialize
-    model = NRMSModel(embedding_matrix, NUM_HEADS, HEAD_DIM)
+    model = NRMSModel(embedding_matrix, NUM_HEADS, HEAD_DIM).to(device)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     criterion = nn.CrossEntropyLoss()
 

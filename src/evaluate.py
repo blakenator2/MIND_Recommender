@@ -1,5 +1,6 @@
 from sklearn.metrics import roc_auc_score
 import numpy as np
+import matplotlib.pyplot as plt
 import torch
 
 
@@ -63,5 +64,10 @@ def evaluate(model, val_loader, device):
     
     }
 
-def loss_graph():
-    print("graph")
+def loss_graph(data, name):
+    epoch = range(1, len(data) + 1)
+    plt.title(f'{name} loss')
+    plt.ylabel('Training Loss')
+    plt.xlabel('Epoch')
+    plt.plot(epoch, data)
+    plt.show()
